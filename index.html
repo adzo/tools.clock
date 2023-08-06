@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body class="h-screen bg-gray-700 text-white">
+    <div class="flex flex-col justify-center w-full h-full items-center">
+      <!-- Clock -->
+      <div id="clockContainer"
+        class=" h-3/5 aspect-square rounded-full relative"
+      >
+      <div class="w-full h-full absolute flex justify-center items-center">
+        <div class="w-2 h-2 border-2 border-gray-200 rounded-full"></div>
+      </div>
+      <div id="minutesHandle" class="w-full h-full absolute top-0 items-center ">
+        <div class="w-2 h-48 bg-gray-100 relative -bottom-1/2 left-1/2 -translate-x-1/2 mt-2"  ></div>
+      </div>
+      <div class="w-full h-full absolute flex justify-center items-center">
+        <div class="w-6 h-6 border-4 border-gray-200 rounded-full"></div>
+      </div>
+      <div id="hoursHandle" class="w-full h-full absolute top-0 items-center">
+        <div class="w-2 h-32 bg-gray-300 relative -bottom-1/2 left-1/2 -translate-x-1/2 mt-2"  ></div>
+      </div>
+      <div class="w-full h-full absolute flex justify-center items-center">
+        <div class="w-6 h-6 border-4 border-gray-200 rounded-full"></div>
+      </div>
+      <div id="secondsHandle" class="w-full h-full absolute top-0 items-center rotate-90">
+        <div class="w-2 h-44 bg-red-400 relative -bottom-1/2 left-1/2 -translate-x-1/2 mt-1"  ></div>
+      </div>
+      <div class="w-full h-full absolute flex justify-center items-center">
+        <div class="w-4 h-4 border-4 border-red-400 rounded-full shadow"></div>
+      </div>
+      </div>
+      <!-- Numeric clock -->
+      <div class="flex gap-1 text-6xl mt-10">
+        <p id="hours">14</p>
+        <p>:</p>
+        <p id="minutes">50</p>
+        <p>:</p>
+        <p id="seconds">30</p>
+      </div>
+      <!-- Date -->
+      <div class="flex gap-1 text-6xl mt-2">
+        <p id="day">06</p>
+        <p>/</p>
+        <p id="month">08</p>
+        <p>/</p>
+        <p id="year">2023</p>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
